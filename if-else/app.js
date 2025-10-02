@@ -248,3 +248,60 @@ if(balance >= withdraw){
 }else{
     console.log("Insufficient Balance");
 }
+
+// 23. একটা অ্যারে দেওয়া হলো। চেক করো 7 নাম্বারটা আছে কিনা। যদি থাকে তাহলে "Found" প্রিন্ট করো, না থাকলে "Not Found" প্রিন্ট করো।
+const aNumber = [34,7,33,5,43,6,5,3,];
+if(aNumber.includes(7)){
+    console.log("Found");
+}else{
+    console.log("Not Found");
+}
+
+// 24.  চেক করো "Python" আছে কিনা 
+const Planguage = ["JavaScript", "python", "C++", "Java"];
+if(Planguage.includes("python")){
+    console.log("Python Found");
+}else{
+    console.log(" Python Not Found");
+}
+
+// 25.  indexOf ব্যবহার করে প্রথমবার 2 কোথায় আছে সেটা বের করো।
+const num1 = [2, 4, 5, 2, 7, 2, 8];
+console.log(num1.indexOf(2));
+
+// 26. একটা অ্যারে: [10, 20, 30, 40]
+// indexOf(25) এর আউটপুট কী আসবে? সেটা কোড দিয়ে প্রমাণ করো।
+const num2 = [10, 20, 30, 40];
+console.log(num2.indexOf(25)); // আউটপুট -1 আসবে কারণ 25 এই অ্যারেতে নেই।
+
+/* 27. একটা অ্যারে দেওয়া হলো: [1, 3, 5, 7, 9]
+একসাথে চেক করো "5" আর "10" আছে কিনা। দুটোই থাকলে "Both Found" প্রিন্ট করো, একটা থাকলে "One Found", আর কিছুই না থাকলে "Not Found".*/
+const num3 = [1, 3, 5, 7, 9];
+if(num3.includes(5) && num3.includes(10)){
+    console.log("Both Found");
+}
+else if(num3.includes(5) || num3.includes(10)){
+        console.log("One Found");
+}
+else{
+    console.log("Not Found");
+}
+
+/* 28.  একটা বাক্য: "I love JavaScript programming"
+একটা অ্যারেতে "JavaScript" আছে কিনা। */
+const laka = "I love JavaScript programming";
+if(laka.includes('JavaScript')){
+    console.log("JavaScript Found");
+}else{
+    console.log("JavaScript Not Found");
+}
+
+// 29. একটা অ্যারে: [100, 200, 300, 400]চেক করো ইনপুট ভ্যালুটা অ্যারেতে আছে কিনা। থাকলে index দেখাও, না থাকলে "Not Found" দেখাও।
+const num6 = 200 ;
+const num5 = [100, 200, 300, 400] ;
+if(num5.includes(200)){
+    console.log("index");
+}else{
+    console.log("Not Found");
+}
+
